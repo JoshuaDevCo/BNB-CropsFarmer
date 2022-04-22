@@ -6,7 +6,7 @@
     var(--primary) 0%,
     rgb(60, 40, 80) 100%
   );
-  --token: #f3ba2c;
+  --token: #f4c444;
   --box-gradient: linear-gradient(
     rgba(249, 251, 252, 0.9) 0%,
     rgba(255, 255, 255, 0.9) 51.04%,
@@ -41,7 +41,7 @@ body {
   background-color: rgb(33, 36, 41) !important;
   /*  background: var(--radial-gradient); */
   color: #fff;
-  background: url("../img/USDCBG.png");
+  background: url("../img/BNBbg.png");
   background-repeat: no-repeat !important;
   background-size: cover;
   background-attachment: fixed;
@@ -52,7 +52,7 @@ body {
   left: 0px;
   width: 100%;
   -webkit-mask-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.9));
-  background: url("../img/BUSDBG.png");
+  background: url("../img/BNBbg.png");
   background-repeat: no-repeat!important;
   background-size: cover;
   background-attachment: fixed;
@@ -102,7 +102,6 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  border: 1px white solid;
   transition: all 0.4s;
 }
 .back-to-top i {
@@ -200,7 +199,7 @@ h6 {
   color: #fff;
 }
 #header .logo a span {
-  color: #2e9ace;
+  color: var(--primary);
 }
 
 #header .logo img {
@@ -220,10 +219,10 @@ h6 {
   --------------------------------------------------------------*/
 .connect-btn {
   color: #fff;
-  border-radius: 6px;
+  border-radius: 5px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 12px;
   border: 2px solid var(--token);
 }
 .connect-btn:hover {
@@ -293,7 +292,25 @@ h6 {
 }
 .navbar .mine:hover {
   color: #000;
-  background-color: black;
+  background-color: var(--token);
+}
+
+.navbar .bnb-miner {
+  width: auto;
+  background-color: #877b12;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid #000;
+  box-shadow: 0px 5px 20px rgb(255 255 255 / 30%),
+    inset 0px 0px 0px rgb(0 0 0 / 32%);
+  max-width: 200px;
+  margin: 20px auto 20px auto;
+}
+
+#navbar .bnb-miner:hover {
+  color: #fff;
+  background-color: #e0cd1f;
 }
 
 .other-miner {
@@ -521,6 +538,7 @@ h6 {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  padding-top: 200px;
 }
 
 #hero:before {
@@ -541,7 +559,7 @@ h6 {
 #hero h1 {
   margin: 0;
   padding-bottom: 15px;
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: 700;
   line-height: 50px;
@@ -551,6 +569,13 @@ h6 {
 #hero h2 {
   font-weight: 600;
   font-size: 17px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+#hero h3 {
+  font-weight: 600;
+  font-size: 20px;
   line-height: 20px;
   padding-bottom: 15px;
 }
@@ -574,7 +599,6 @@ h6 {
   padding: 200px;
   width: 750px;
   height: 629px;
-  margin: 10px;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -611,10 +635,10 @@ h6 {
   background: linear-gradient(
     to right,
     #f3ba2c 20%,
-    #efc14e 40%,
-    #efd490 50%,
-    #ebd8aa 55%,
-    #ecca73 70%,
+    #e5cc8b 40%,
+    #efcb72 50%,
+    #d5b25c 55%,
+    #e5cc8b 70%,
     #f3ba2c 100%
   );
   background-size: 200% auto;
@@ -636,10 +660,10 @@ fff .content-box {
   background: #f3ba2c;
   max-width: 1200px;
   margin: 0 auto;
-  border-radius: 18px;
+  border-radius: 15px;
   border-style: solid;
-  border-width: 2px;
-  border-color: #ffffff;
+  border-width: 7px;
+  border-color: #957d32;
 }
 
 #main .content-box {
@@ -674,7 +698,7 @@ fff .content-box {
 #lottery .info-container {
   color: rgba(0, 0, 0, 0.8);
   background: #fafffe;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #000;
   border-radius: 10px;
   width: auto;
   padding: 20px;
@@ -722,7 +746,7 @@ fff .content-box {
   color: white;
   background: rgb(39 34 24);
   backdrop-filter: blur(8px);
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #000000;
   border-radius: 18px;
   width: auto;
   min-width: 215px;
@@ -1175,7 +1199,7 @@ section {
   color: white;
   background: rgb(39 34 24);
   backdrop-filter: blur(8px);
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #000000;
   border-radius: 18px;
   height: 100%;
   font-size: 16px;
@@ -1649,7 +1673,7 @@ section {
   color: rgb(255, 255, 255);
 }
 .faq .faq-list a {
-  color: rgb(255, 255, 255);
+  color: rgb(25, 30, 30);
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1665,7 +1689,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: var(--token);
+  color: var(--primary);
 }
 .faq .faq-list .icon-show,
 .faq .faq-list .icon-close {
@@ -1703,14 +1727,14 @@ section {
   height: 50px;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   background: #f3ba2c;
   cursor: pointer;
   position: relative;
   z-index: 0;
   border-radius: 10px;
-  font-size: 19px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 1000;
 }
 
 .glow-on-hover:before {
@@ -1745,7 +1769,7 @@ section {
 }
 
 .glow-on-hover:active {
-  color: rgb(255, 255, 255);
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -1762,6 +1786,7 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
+  /* background: #f4c444; */
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -1778,9 +1803,23 @@ section {
     background-position: 0 0;
   }
 }
-
 .HeaderImage {
   display: flex;
   margin: auto;
   padding-top: 100px;
+}
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+.banner-img {
+  width: 100%;
+  padding-top: 130px;
+  max-width: 900px;
+  display: flex;
+  margin: auto;
 }
