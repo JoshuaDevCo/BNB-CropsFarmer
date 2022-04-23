@@ -614,6 +614,7 @@ button:hover {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
+  box-shadow: 1px 0px 50px 3px #ffeb3b;
 }
 
 .main-element {
@@ -673,9 +674,7 @@ fff .content-box {
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 15px;
-  border-style: solid;
-  border-width: 7px;
-  border-color: #f3ba2c;
+  box-shadow: 1px 0px 20px 9px #ffeb3b;
 }
 
 #main .content-box {
@@ -766,6 +765,7 @@ fff .content-box {
   margin-top: 10px;
   margin-left: 10px;
   padding: 15px 0px;
+  box-shadow: 1px 0px 11px 2px #272218;
 }
 
 #main .stats-row-container .stat {
@@ -1217,6 +1217,7 @@ section {
   justify-content: space-around;
   padding: 20px 20px 15px 20px;
   margin-top: 7px;
+  box-shadow: 1px 0px 12px 3px #272218;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1752,15 +1753,15 @@ section {
   content: "";
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
     #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
+    #eeeb2a,
+    #f0ee6e,
+    #ebeaac,
+    #ebeaac,
+    #e8e8dd,
+    #f0ee6e,
+    #eeeb2a,
+    #fffb00
   );
   position: absolute;
   top: -2px;
