@@ -87,6 +87,15 @@ h5,
 h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+strong {
+  color: white;
+}
+strong:hover {
+  color: #000;
+}
+button:hover {
+  color: #000;
+}
 
 /*--------------------------------------------------------------
   # Back to top button
@@ -99,6 +108,7 @@ h6 {
   bottom: 15px;
   z-index: 996;
   background: var(--token);
+  border: 1px solid #191e1e;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -635,10 +645,10 @@ h6 {
   background: linear-gradient(
     to right,
     #f3ba2c 20%,
-    #e5cc8b 40%,
-    #efcb72 50%,
-    #d5b25c 55%,
-    #e5cc8b 70%,
+    #f3ba2c 40%,
+    #eed28d 50%,
+    #f3c85f 55%,
+    #efcc73 70%,
     #f3ba2c 100%
   );
   background-size: 200% auto;
@@ -657,13 +667,13 @@ fff .content-box {
 }
 
 #main .container {
-  background: #f3ba2c;
+  background: #c09323;
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 15px;
   border-style: solid;
   border-width: 7px;
-  border-color: #957d32;
+  border-color: #f3ba2c;
 }
 
 #main .content-box {
@@ -1526,7 +1536,7 @@ section {
 #footer {
   background: #f3ba2c;
   padding: 0 0 30px 0;
-  color: #fff;
+  color: #000;
   font-size: 14px;
 }
 #footer .footer-top {
@@ -1822,4 +1832,7 @@ section {
   max-width: 900px;
   display: flex;
   margin: auto;
+}
+.title {
+  color: #191e1e;
 }
