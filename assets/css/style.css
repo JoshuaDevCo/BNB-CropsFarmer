@@ -93,6 +93,7 @@ strong {
 strong:hover {
   color: #000;
 }
+
 button:hover {
   color: #000;
 }
@@ -232,8 +233,9 @@ button:hover {
   border-radius: 5px;
   white-space: nowrap;
   transition: 0.3s;
+  font-weight: bold;
   font-size: 12px;
-  border: 2px solid var(--token);
+  border: 1px solid #ffffff;
 }
 .connect-btn:hover {
   background: var(--token);
@@ -538,7 +540,7 @@ button:hover {
 
   --------------------------------------------------------------*/
 .busd {
-  color: var(--token);
+  color: var(--token) !important;
   font-weight: bold;
   padding: 0px 5px 0px 5px;
 }
@@ -785,6 +787,7 @@ fff .content-box {
   line-height: 35px;
   padding: 5px;
   text-align: center;
+  color: white !important;
 }
 
 @media (max-width: 768px) {
