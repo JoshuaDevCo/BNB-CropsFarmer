@@ -189,14 +189,14 @@ function refreshData() {
 
     contract.methods.WALLET_DEPOSIT_LIMIT().call().then(bnb => {
         maxDeposit = bnb;
-        $("#max-deposit").html(`${readableBNB(bnb)} AVAX`)
+        $("#max-deposit").html(`${readableBNB(bnb)} BNB`)
     }).catch((err) => {
         console.log('WALLET_DEPOSIT_LIMIT', err);
     });	
 	
 	contract.methods.MIN_INVEST_LIMIT().call().then(bnb => {
         minDeposit = bnb;
-        $("#min-deposit").html(`${readableBNB(bnb)} AVAX`)
+        $("#min-deposit").html(`${readableBNB(bnb)} BNB`)
     }).catch((err) => {
         console.log('MIN_INVEST_LIMIT', err);
     });
@@ -208,7 +208,7 @@ function refreshData() {
         console.log(err);
     });
 
-    /** How many miners and eggs per day user will recieve for 1 AVAX deposit **/
+    /** How many miners and eggs per day user will recieve for 1 BNB deposit **/
     contract.methods.getEggsYield(web3.utils.toWei('1')).call().then(result => {
         var miners = result[0];
         var bnb = result[1];
@@ -561,11 +561,11 @@ function hireFarmers(){
 
     var amt = web3.utils.toWei(bnb);
 	if(+amt + +totalDeposits > +maxDeposit) {
-		alert(`you cannot deposit more than ${readableBNB(maxDeposit, 2)} AVAX`);
+		alert(`you cannot deposit more than ${readableBNB(maxDeposit, 2)} BNB`);
         return
     }
     if(+amt > usrBal) {
-		alert("you do not have " + bnb + " AVAX in your wallet");
+		alert("you do not have " + bnb + " BNB in your wallet");
         return
     }
 
